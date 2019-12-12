@@ -1,0 +1,15 @@
+.navbar{
+    &-nav{
+        & li.nav-item{
+            margin-right:25px;
+        }
+    }
+}
+.dropdown{
+    &-item{
+        &:hover{
+            background-color:$blue;
+            color:$white!important;
+        }
+    }
+}

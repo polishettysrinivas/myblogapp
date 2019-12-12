@@ -1,0 +1,185 @@
+body{
+    margin:0;
+    padding:0;
+}
+.logo{
+    width:250px;
+    padding:10px;
+}
+footer{
+    padding:10px;
+    background-color:$blue;;
+    color:$white;
+    text-align: center;
+    & .copyrights{
+        padding:10px;
+    }
+    & .followus{
+        padding:5px;
+        & i{
+            padding:10px;
+        }
+    }
+}
+h1{
+    padding-bottom:25px;
+    text-align:center;
+}
+.section{
+    &-main{
+        padding:40px 20px;
+    }
+    &-blog{
+        margin-bottom:20px;
+        padding:20px 20px 10px 20px;
+        &.main{
+            &::after{
+                content: "";
+                display:block;
+                width:100%;
+                border-bottom:2px dashed $lightblue;
+                position: relative;
+                bottom:-12px;
+            }
+            &:hover{
+                -webkit-box-shadow: 0px 0px 9px 2px $shadowgrey;
+                -moz-box-shadow: 0px 0px 9px 2px $shadowgrey;
+                box-shadow: 0px 0px 9px 2px $shadowgrey;
+            }
+        }
+        &-smimg{
+            margin-bottom:10px;
+        }
+        &-content{
+            &-list{
+                & .post{
+                    padding-top:10px;
+                    max-width: 90%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+    &-side{
+        padding:15px;
+        max-height:100vh;
+        background-color:$lightgrey;
+        // margin-top: 70px;;
+        & h4{
+            text-align:center;
+        }
+        & small{
+            color:$grey;
+        }
+        & .form{
+            padding:15px 0px;
+            &-control{
+                border:1px solid $grey;
+                text-align:center;
+                &::-webkit-input-placeholder, &::-moz-placeholder, &
+                :-ms-input-placeholder{
+                    color:$lightergrey;
+                }
+            }
+        }
+        & .btn{
+            &-orange{
+                background-color:$amber;
+                color:$white;
+                width:100%;
+                &:hover{
+                    color:$black;
+                }
+            }
+        }
+        
+    }
+    &-author{
+        padding:30px 15px 50px 15px;
+        background-color:$lightgrey;
+        & h4{
+            text-align:center;
+        }
+        & div{
+            display:block;
+            clear:both;
+            padding-top:10px;
+            & i{
+                margin-right:10px;
+                float:left;
+                display:inline-block;
+                width:15px;
+                color:$grey;
+            }
+            & span{
+                display:inline-block;
+                float:left;
+                width:85%;
+                word-break: break-all;
+            }
+        }
+    }
+    &-comments{
+        padding:20px;
+        & .userimg{
+            display:inline-block;
+            width:75px;
+            font-size:60px;
+            float:left;
+            color:$grey;
+        }
+        & .comments{
+            display:inline-block;
+            width:calc(100% - 75px);
+            & .actions{
+                color:$grey;
+                & i{
+                    margin-right:20px;
+                    cursor: pointer;;
+                    &.fa-thumbs-up{
+                        color:$green;
+                    }
+                    &.fa-thumbs-down{
+                        color:$red;
+                    }
+                }
+            }
+        }
+    }
+}
+.posttitle{
+    color:$amber;
+}
+.author{
+    color:$grey;
+}
+.blogheading{
+    padding-bottom:10px;
+}
+.addcomment{
+    padding-bottom:10px;
+    margin-bottom:10px;
+    border-bottom:1px solid $grey;
+}
+.minheight{
+    min-height:100vh;
+}
+.sk-wave {
+    background-image: url(assets/images/loader.gif);
+    content: "Loading....";
+    background-size: contain;
+    width: 100px !important;
+    height: 100px !important;
+    z-index: 99 !important;
+    opacity: 1 !important;
+  }
+  .sk-rect,
+.sk-rect1,
+.sk-rect2,
+.sk-rect3,
+.sk-rect4,
+.sk-rect5 {
+  display: none !important;
+}

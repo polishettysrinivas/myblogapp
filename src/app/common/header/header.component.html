@@ -1,0 +1,27 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-primary" [containerInside]="false">
+    <mdb-navbar-brand><img class="logo" src="../../../assets/images/logo.png" alt="Srinivas Polishetty"></mdb-navbar-brand>
+    <links>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link waves-light" mdbWavesEffect>Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link waves-light" mdbWavesEffect>About</a>
+            </li>
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                    Follow <span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Facebook</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Twitter</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">LinkedIn</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Instagram</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Youtube</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link waves-light" mdbWavesEffect>Contact</a>
+            </li>
+        </ul>
+    </links>
+</mdb-navbar>
